@@ -1,9 +1,33 @@
 h1 {
-  color: rgb(5, 128, 111);
+  color: rgb(33, 145, 145);
   text-align: center;
   border-bottom: solid thin;
   margin: 20px;
   padding: 30px;
+}
+
+#startButtonArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 12%;
+  gap: 30px;
+}
+
+#startButton,
+#restartButton {
+  cursor: pointer;
+  border-radius: 25px;
+  background-color: rgb(33, 145, 145);
+  box-shadow: 5px 10px 5px 2px rgba(1, 26, 41, 0.541);
+  padding: 15px;
+  width: 100px;
+  color: white;
+}
+
+#startButton:hover,
+#restartButton:hover {
+  background-color: rgb(25, 105, 105);
 }
 
 .gameArea {
@@ -11,12 +35,17 @@ h1 {
   justify-content: space-between;
   align-items: center;
   /*border: solid thin;*/
-  width: 100%;
+  /*width: 100%;*/
 }
 
-#playerArea,
+#playerArea {
+  padding-left: 15%;
+  padding-top: 7%;
+}
+
 #pcArea {
-  padding: 15%;
+  padding-right: 15%;
+  padding-top: 7%;
 }
 
 #playerDisplay {
@@ -41,15 +70,17 @@ img {
 }
 
 .button-choice {
+  color: white;
+  font-weight: 500;
   border-radius: 25px;
   border: none;
-  background-color: rgb(139, 236, 240);
+  background-color: rgb(33, 145, 145);
   padding: 10px 20px;
   box-shadow: 5px 10px 5px 2px rgba(1, 26, 41, 0.541);
 }
 
 .button-choice:hover {
-  background-color: rgb(73, 173, 179);
+  background-color: rgb(25, 105, 105);
   cursor: pointer;
 }
 
@@ -63,7 +94,8 @@ img {
 
 #resultArea {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   font-size: 2em;
 }
 

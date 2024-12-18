@@ -12,7 +12,11 @@
       <h1>Tu connais déjà les règles</h1>
     </header>
     <main>
-      <div class="gameArea">
+      <div id="startButtonArea">
+        <button id="startButton"><strong>START</strong></button>
+        <p>Cliquez sur start pour démarrer le jeu</p>
+      </div>
+      <div class="gameArea" style="display: none">
         <section id="playerArea">
           <div id="playerDisplay">Fais ton choix</div>
           <div id="divBtns">
@@ -22,7 +26,10 @@
           </div>
         </section>
         <div id="resultArea">
-          <p id="result">...</p>
+          <p id="result"></p>
+          <button id="restartButton" style="display: none">
+            <strong>Restart</strong>
+          </button>
         </div>
         <section id="pcArea">
           <div id="pcDisplay">...</div>
